@@ -1,0 +1,252 @@
+.createAccount {
+  align-self: stretch;
+  position: relative;
+  line-height: 34px;
+  font-weight: 600;
+}
+.formText {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.iconaccount {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+.emailAddress {
+  border: 0;
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.15px;
+  color: var(--color-darkslategray-100);
+  text-align: left;
+  outline: 0;
+}
+.email,
+.formFields,
+.password {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.email {
+  border-radius: var(--br-xs);
+  background-color: var(--color-whitesmoke-100);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-base) var(--padding-xs);
+  align-items: center;
+  gap: var(--gap-7xs);
+}
+.formFields,
+.password {
+  align-items: flex-start;
+}
+.password {
+  border-radius: var(--br-xs);
+  background-color: var(--color-whitesmoke-100);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-base) var(--padding-xs);
+  gap: var(--gap-7xs);
+}
+.formFields {
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.button1 {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--primary-contrast);
+  text-align: left;
+}
+.button,
+.formFieldsParent {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-blueviolet-100);
+  border-radius: var(--br-9xl);
+  width: 164px;
+  height: 56px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover {
+  background-color: var(--color-blueviolet-300);
+}
+.formFieldsParent {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+}
+.frameChild,
+.orSignUp {
+  align-self: stretch;
+  position: relative;
+}
+.frameChild {
+  border-top: 1px solid var(--color-whitesmoke-300);
+  box-sizing: border-box;
+  height: 1px;
+}
+.orSignUp {
+  line-height: 34px;
+}
+.socialIcongm {
+  position: absolute;
+  top: calc(50% - 16px);
+  left: calc(50% - 16px);
+  width: 32px;
+  height: 32px;
+}
+.facebook {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.facebook1 {
+  position: relative;
+  line-height: 28px;
+  display: inline-block;
+  width: 82px;
+}
+.socialLogindefaultCopy {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-whitesmoke-100);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-5xl) var(--padding-base);
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.facebookIcon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.facebook2 {
+  position: relative;
+  line-height: 28px;
+}
+.orSignUpWithParent,
+.socialLogindefaultCopyParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.socialLogindefaultCopyParent {
+  flex-direction: row;
+  gap: var(--gap-sm);
+  text-align: center;
+  font-family: var(--font-sf-pro);
+}
+.orSignUpWithParent {
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+.span {
+  color: var(--color-slategray);
+}
+.login1 {
+  color: var(--color-blueviolet-100);
+}
+.iAlreadyHaveContainer {
+  align-self: stretch;
+  position: relative;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+}
+.frameParent,
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  gap: var(--gap-5xl);
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-100);
+  font-family: var(--font-roboto);
+}
+.login {
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--primary-contrast);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--color-whitesmoke-400);
+  box-sizing: border-box;
+  width: 100%;
+  padding: var(--padding-9xl) var(--padding-11xl);
+  gap: var(--gap-mid);
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 960px) {
+  .createAccount {
+    font-size: var(--font-size-lg);
+  }
+  .facebook,
+  .socialIcongm {
+    width: 30px;
+  }
+  .login,
+  .socialLogindefaultCopy {
+    padding-left: var(--padding-5xs);
+    padding-right: var(--padding-5xs);
+    box-sizing: border-box;
+  }
+  .login {
+    padding-left: var(--padding-3xs);
+    padding-right: var(--padding-3xs);
+  }
+}
+@media screen and (max-width: 420px) {
+  .button {
+    width: 100%;
+  }
+  .button:hover {
+    background-color: var(--color-peru);
+  }
+  .socialLogindefaultCopy {
+    flex: unset;
+    align-self: stretch;
+  }
+  .socialLogindefaultCopyParent {
+    flex-direction: column;
+  }
+  .login {
+    padding-left: var(--padding-8xs);
+    padding-right: var(--padding-8xs);
+    box-sizing: border-box;
+  }
+}
